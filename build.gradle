@@ -2,6 +2,12 @@ plugins {
     id 'java'
     id 'pl.allegro.tech.build.axion-release' version '1.12.1'
 }
+
+scmVersion {
+    tag {
+        prefix = 'develop'
+    }
+}
 version = scmVersion.version
 
 group 'org.example'
